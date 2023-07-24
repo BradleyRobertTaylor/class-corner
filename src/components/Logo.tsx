@@ -2,7 +2,7 @@ export default function Logo() {
   return (
     <div className="flex items-center font-bold text-2xl gap-2">
       <svg
-        className="w-12 h-12"
+        className="w-14 h-14"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 64 64"
       >
@@ -39,7 +39,10 @@ export default function Logo() {
           <path d="M42 37H44V48H42z"></path>
         </g>
       </svg>
-      ClassCorner {/*ClassTools OpenHouse ClassDoor*/}
+      <span>
+        <span className="text-4xl">C</span>lass
+        <span className="text-4xl">C</span>orner
+      </span>
     </div>
   );
 }

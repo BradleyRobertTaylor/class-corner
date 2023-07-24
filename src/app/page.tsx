@@ -1,25 +1,30 @@
 import Button from "@/components/Button";
-import Underline from "@/components/ui/Underline";
+import PhotoGallery from "@/components/PhotoGallery";
+import SignUp from "@/components/SignUp";
 
 export default function Home() {
   return (
     <main>
-      <section className="text-center pt-40 px-6">
-        <h1 className="font-black text-3xl mb-5 text-gray-700">
-          Let's make classroom communication easy
+      <section className="text-center pt-40 pb-6 px-6 md:pt-44 md:max-w-2xl lg:max-w-4xl mx-auto">
+        <h1 className="font-extrabold text-3xl mb-5 text-slate-700 sm:text-6xl">
+          Your teaching ally in the classroom
         </h1>
-        <p className="font-bold text-gray-500 text-sm mb-14">
-          Providing valuable opportunity for Parents and Teachers to discuss
-          students academic <Underline>performance and progress.</Underline>
+        <p className="font-bold text-gray-500 text-sm mb-5 sm:text-xl">
+          A better app for a better teaching experience. ClassCorner helps you
+          simplify daily tasks by giving teachers the tools to succeed and focus
+          on what's most important
         </p>
-        <Button text="Sign up" size="large" />
+        <div className="text-3xl font-black text-orange-500 mb-14 sm:text-5xl md:mb-6">
+          TEACHING!
+        </div>
+        <Button text="Sign up" size="large" className="md:hidden" />
+        <SignUp />
       </section>
+      <PhotoGallery />
     </main>
   );
 }
 
-// Uniting parents and teachers for a{" "}
-// <span className="relative">
-//   <span>brighter future!</span>
-//   <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gray-300"></span>
-// </span>
+// Go beyond the classroom with our teaching resources. ClassCorner is
+// here to provide a support system for teachers to help with classroom
+// management, organization, and communication.
