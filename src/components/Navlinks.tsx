@@ -8,8 +8,6 @@ interface NavLink {
 
 const links: NavLink[] = [
   { text: "About us", href: "/aboutus" },
-  { text: "Schools", href: "schools" },
-  { text: "Teachers", href: "/teachers" },
   { text: "Log in", href: "/signin" },
 ];
 
@@ -22,7 +20,7 @@ export default function NavLinks({ className }: NavLinkProps) {
     <ul className={`${className} md:flex md:gap-7 md:items-center`}>
       {links.map(({ text, href }) => {
         return (
-          <li key={text}>
+          <li key={text} className="hover:text-orange-500">
             <Link href={href}>{text}</Link>
           </li>
         );

@@ -13,11 +13,16 @@ export default function Button({ className, text, size }: ButtonProps) {
   switch (size) {
     case "large":
       styles =
-        "bg-button-blue text-white rounded-full w-5/6 font-semibold px-4 py-5 text-lg";
+        "bg-button-purple text-white rounded-full w-5/6 font-semibold px-4 py-5 text-lg";
       break;
     default:
-      styles = "bg-button-blue text-white rounded-3xl font-semibold px-4 py-2";
+      styles =
+        "bg-button-purple text-white rounded-3xl font-semibold px-4 py-2";
   }
 
-  return <button className={`${styles} ${className}`}>{text}</button>;
+  return (
+    <button className={`${styles} ${className} hover:bg-purple-500`}>
+      {text}
+    </button>
+  );
 }

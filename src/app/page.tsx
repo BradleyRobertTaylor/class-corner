@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <section className="text-center pt-40 pb-6 px-6 md:pt-44 md:max-w-2xl lg:max-w-4xl mx-auto">
         <h1 className="font-extrabold text-3xl mb-5 text-slate-700 sm:text-6xl">
-          Your teaching ally in the classroom
+          Your ally in the classroom
         </h1>
         <p className="font-bold text-gray-500 text-sm mb-5 sm:text-xl">
           A better app for a better teaching experience. ClassCorner helps you
