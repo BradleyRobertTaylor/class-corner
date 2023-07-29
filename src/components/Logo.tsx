@@ -1,6 +1,6 @@
-export default function Logo() {
+export default function Logo({name}: {name?: string}) {
   return (
-    <div className="flex items-center font-bold text-2xl gap-2">
+    <div className="flex items-center font-bold text-2xl gap-4">
       <svg
         className="w-14 h-14"
         xmlns="http://www.w3.org/2000/svg"
@@ -40,8 +40,14 @@ export default function Logo() {
         </g>
       </svg>
       <span>
-        <span className="text-4xl">C</span>lass
-        <span className="text-4xl">C</span>orner
+        {
+          name ?
+          <span className="text-3xl">{name}</span> :
+          <>
+            <span className="text-4xl">C</span>lass
+            <span className="text-4xl">C</span>orner
+          </>
+        }
       </span>
     </div>
   );
