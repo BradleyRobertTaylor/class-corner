@@ -46,7 +46,3 @@ export default function Home() {
     </main>
   );
 }
-
-// Go beyond the classroom with our teaching resources. ClassCorner is
-// here to provide a support system for teachers to help with classroom
-// management, organization, and communication.
