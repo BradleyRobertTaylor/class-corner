@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Logo({ name }: { name?: string }) {
+const Logo = ({ name }: { name?: string }) => {
   return (
     <Link href="/" className="flex items-center font-bold text-2xl gap-4">
       <svg
@@ -53,4 +53,6 @@ export default function Logo({ name }: { name?: string }) {
       </span>
     </Link>
   );
-}
+};
+
+export default Logo;

@@ -1,17 +1,16 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import Icons from "./Icons";
 import { ReactNode } from "react";
 
-interface CardProps {
+interface SignUpCard {
   text: string;
   iconBackgroundColor: string;
   icon: ReactNode;
 }
 
-export default function Card({ text, icon, iconBackgroundColor }: CardProps) {
+const SignUpCard = ({ text, icon, iconBackgroundColor }: SignUpCard) => {
   return (
     <motion.a
       whileHover={{ scale: 1.1 }}
@@ -27,4 +26,6 @@ export default function Card({ text, icon, iconBackgroundColor }: CardProps) {
       <Icons icon="arrow" className="aspect-square w-3 mx-auto" />
     </motion.a>
   );
-}
+};
+
+export default SignUpCard;

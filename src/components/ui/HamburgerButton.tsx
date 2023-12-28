@@ -1,6 +1,4 @@
-interface HamburgerProps {}
-
-export default function HamburgerButton() {
+const HamburgerButton = () => {
   return (
     <div className="fill-gray-500 md:hidden">
       <svg
@@ -12,4 +10,6 @@ export default function HamburgerButton() {
       </svg>
     </div>
   );
-}
+};
+
+export default HamburgerButton;

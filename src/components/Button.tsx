@@ -1,28 +1,34 @@
+import { cn } from "@/lib/utils";
 import { ButtonHTMLAttributes } from "react";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   text: string;
-  size?: string;
-  padding?: string;
-  className?: string;
+  size?: "large" | "default";
 }
 
-export default function Button({ className, text, size }: ButtonProps) {
-  let styles;
-
-  switch (size) {
-    case "large":
-      styles =
-        "bg-button-purple text-white rounded-full w-5/6 font-semibold px-4 py-5 text-lg";
-      break;
-    default:
-      styles =
-        "bg-button-purple text-white rounded-3xl font-semibold px-4 py-2";
-  }
+const Button = ({
+  className,
+  text,
+  size = "default",
+  ...props
+}: ButtonProps) => {
+  const styles = {
+    large: "rounded-full w-5/6 py-5 text-lg",
+    default: "rounded-3xl py-2",
+  };
 
   return (
-    <button className={`${styles} ${className} hover:bg-purple-500`}>
+    <button
+      {...props}
+      className={cn(
+        "bg-button-purple text-white font-semibold px-4 hover:bg-purple-500",
+        styles[size],
+        className,
+      )}
+    >
       {text}
     </button>
   );
-}
+};
+
+export default Button;
