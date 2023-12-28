@@ -12,7 +12,7 @@ export default function Home() {
         <p className="font-bold text-gray-500 text-sm mb-5 sm:text-xl">
           A better app for a better teaching experience. ClassCorner helps you
           simplify daily tasks by giving educators the tools to succeed and
-          focus on what's most important
+          focus on what&apos;s most important
         </p>
         <div className="text-3xl font-black text-orange-500 mb-14 sm:text-5xl md:mb-6">
           TEACHING!

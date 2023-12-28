@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { images } from "@/data/photo-gallery-images";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -19,13 +19,6 @@ export default function Slideshow() {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
       />
-      <button
-        onClick={() =>
-          setImageIndex(imageIndex === images.length - 1 ? 0 : imageIndex + 1)
-        }
-      >
-        Next
-      </button>
     </AnimatePresence>
   );
 }

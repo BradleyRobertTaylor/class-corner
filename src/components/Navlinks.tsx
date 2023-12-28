@@ -15,7 +15,7 @@ interface NavLinkProps {
   className: string;
 }
 
-export default function NavLinks({ className }: NavLinkProps) {
+const NavLinks = ({ className }: NavLinkProps) => {
   return (
     <ul className={`${className} md:flex md:gap-7 md:items-center`}>
       {links.map(({ text, href }) => {
@@ -30,4 +30,6 @@ export default function NavLinks({ className }: NavLinkProps) {
       </li>
     </ul>
   );
-}
+};
+
+export default NavLinks;
