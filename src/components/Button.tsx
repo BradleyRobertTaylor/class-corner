@@ -1,10 +1,10 @@
 import { cn } from "@/lib/utils";
 import { ButtonHTMLAttributes } from "react";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   text: string;
   size?: "large" | "default";
-}
+};
 
 const Button = ({
   className,

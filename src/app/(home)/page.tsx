@@ -1,11 +1,12 @@
 import Button from "@/components/Button";
 import SignUp from "@/components/SignUp";
-import Slideshow from "@/components/Slideshow";
+import src from "../../../public/pexels-max-fischer-5212703.jpg";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main>
-      <section className="text-center pt-40 pb-6 px-6 md:pt-44 md:max-w-2xl lg:max-w-4xl mx-auto">
+      <section className="h-screen text-center pt-40 pb-6 px-6 md:pt-44 md:max-w-2xl lg:max-w-4xl mx-auto">
         <h1 className="font-extrabold text-3xl mb-5 text-slate-700 sm:text-6xl">
           Your ally in the classroom
         </h1>
@@ -22,7 +23,7 @@ export default function Home() {
       </section>
       <section className="p-4 md:flex md:items-center md:gap-8 md:p-8 lg:items-start lg:px-16">
         <div className="relative">
-          <Slideshow />
+          <Image className="rounded-3xl" src={src} alt="Image" />;
         </div>
         <div>
           <h2 className="text-center py-4 text-2xl font-bold border-b-2 border-orange-500 md:pt-0 md:text-4xl">

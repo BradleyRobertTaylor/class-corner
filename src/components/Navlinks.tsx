@@ -18,13 +18,11 @@ interface NavLinkProps {
 const NavLinks = ({ className }: NavLinkProps) => {
   return (
     <ul className={`${className} md:flex md:gap-7 md:items-center`}>
-      {links.map(({ text, href }) => {
-        return (
-          <li key={text} className="hover:text-orange-500">
-            <Link href={href}>{text}</Link>
-          </li>
-        );
-      })}
+      {links.map(({ text, href }) => (
+        <li key={text} className="hover:text-orange-500">
+          <Link href={href}>{text}</Link>
+        </li>
+      ))}
       <li>
         <Button text="Sign up" />
       </li>
