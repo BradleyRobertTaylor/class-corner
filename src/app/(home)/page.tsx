@@ -6,16 +6,16 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <main>
-      <section className="h-[90dvh] text-center pt-40 pb-6 px-6 md:pt-44 md:max-w-2xl lg:max-w-4xl mx-auto">
+      <section className="text-center pt-40 pb-6 px-6 md:pt-44 md:max-w-2xl lg:max-w-4xl mx-auto">
         <h1 className="font-extrabold text-3xl mb-5 text-slate-700 sm:text-6xl">
-          Your ally in the classroom
+          Your Ally in the Classroom
         </h1>
         <p className="font-bold text-gray-500 text-sm mb-5 sm:text-xl">
           A better app for a better teaching experience. ClassCorner helps you
           simplify daily tasks by giving educators the tools to succeed and
           focus on what&apos;s most important
         </p>
-        <div className="text-3xl font-black text-orange-500 mb-14 sm:text-5xl md:mb-6">
+        <div className="text-3xl font-black text-[#FA7D1B] mb-14 sm:text-5xl md:mb-6">
           TEACHING!
         </div>
         <Button text="Sign up" size="large" className="md:hidden" />

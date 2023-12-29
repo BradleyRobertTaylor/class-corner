@@ -1,12 +1,12 @@
-import DashboardNav from "@/components/DashboardNav";
+import DashboardNav from '@/components/DashboardNav';
 
 export default function DashboardLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <main className="bg-slate-100 h-screen">
+    <main className="h-screen">
       <DashboardNav />
       {children}
     </main>
