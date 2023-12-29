@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import Icons from "./ui/Icons";
-import { ReactNode } from "react";
-import { motion } from "framer-motion";
+import Icons from './ui/Icons';
+import { ReactNode } from 'react';
+import { motion } from 'framer-motion';
 
 type CardProps = {
   text: string;
@@ -30,7 +30,7 @@ const Card = ({ text, icon, iconBackgroundColor }: CardProps) => {
 
 const SignUp = () => {
   return (
-    <div className="hidden md:block mx-auto max-w-xl">
+    <div className="hidden md:block mx-auto max-w-md">
       <h3 className="font-extrabold mb-5">Get started as...</h3>
       <div className="flex gap-4 h-50">
         <Card
@@ -42,11 +42,6 @@ const SignUp = () => {
           iconBackgroundColor="bg-[#ffd943]"
           text="Parent"
           icon={<Icons icon="parent" className="w-16" />}
-        />
-        <Card
-          iconBackgroundColor="bg-[#9afbfe]"
-          text="Admin"
-          icon={<Icons icon="admin" className="w-16" />}
         />
       </div>
     </div>
