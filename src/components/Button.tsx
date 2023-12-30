@@ -1,15 +1,17 @@
 import { cn } from '@/lib/utils';
-import { ButtonHTMLAttributes } from 'react';
+import { ButtonHTMLAttributes, ReactNode } from 'react';
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
-  text: string;
+  text?: string;
   size?: 'large' | 'default';
+  children?: ReactNode;
 };
 
 const Button = ({
   className,
   text,
   size = 'default',
+  children,
   ...props
 }: ButtonProps) => {
   const styles = {
@@ -26,6 +28,7 @@ const Button = ({
         className,
       )}
     >
+      {children}
       {text}
     </button>
   );

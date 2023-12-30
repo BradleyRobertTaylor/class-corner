@@ -3,7 +3,7 @@ import SignUp from '@/components/SignUp';
 import src from '../../../public/pexels-max-fischer-5212703.jpg';
 import Image from 'next/image';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main>
       <section className="text-center pt-40 pb-6 px-6 md:pt-44 md:max-w-2xl lg:max-w-4xl mx-auto">
