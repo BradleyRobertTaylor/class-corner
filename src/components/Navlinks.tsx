@@ -8,7 +8,7 @@ type NavLink = {
 
 const links: NavLink[] = [
   { text: 'About us', href: '/aboutus' },
-  { text: 'Log in', href: '/signin' },
+  { text: 'Log in', href: '/login' },
 ];
 
 type NavLinkProps = {

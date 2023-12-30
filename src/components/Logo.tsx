@@ -1,6 +1,6 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-const Logo = ({ name }: { name?: string }) => {
+const Logo = ({ name, className }: { name?: string; className?: string }) => {
   return (
     <Link href="/" className="flex items-center font-bold text-2xl gap-4">
       <svg
@@ -45,10 +45,10 @@ const Logo = ({ name }: { name?: string }) => {
         {name ? (
           <span className="text-2xl">{name}</span>
         ) : (
-          <>
+          <div className={className}>
             <span className="text-4xl">C</span>lass
             <span className="text-4xl">C</span>orner
-          </>
+          </div>
         )}
       </span>
     </Link>
