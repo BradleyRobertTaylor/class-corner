@@ -5,6 +5,8 @@ import { env } from '@/env.mjs';
 export const {
   handlers: { GET, POST },
   auth,
+  signOut,
+  signIn,
 } = NextAuth({
   providers: [
     Google({
