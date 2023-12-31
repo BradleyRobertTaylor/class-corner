@@ -1,5 +1,7 @@
 import AddClassButton from '@/components/AddClassButton';
 
+import { classRooms } from '@/data/mock';
+
 export default function ClassroomsPage() {
   return (
     <section className="pt-32 pb-6 px-6 md:pt-44 md:max-w-2xl lg:max-w-4xl mx-auto">
