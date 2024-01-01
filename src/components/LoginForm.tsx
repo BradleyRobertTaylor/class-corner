@@ -1,12 +1,11 @@
 'use client';
 
-import { signIn } from 'next-auth/react';
 import Button from './Button';
 import Logo from './Logo';
 import Divider from './ui/Divider';
-import Icons from './ui/Icons';
+import GoogleSignUp from './GoogleSignUp';
 
-const EmailForm = () => {
+const LoginForm = () => {
   return (
     <div className="flex flex-col gap-3 items-center w-full max-w-md bg-white p-10 rounded-xl shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
       <Logo />
@@ -22,15 +21,9 @@ const EmailForm = () => {
         </div>
       </form>
       <Divider text="or continue with" className="my-4" />
-      <Button
-        onClick={() => signIn('google')}
-        className="flex gap-4 items-center justify-center w-full bg-white text-black shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] hover:shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:bg-white transition-shadow font-normal"
-      >
-        <Icons className="w-8" icon="google" />
-        Sign in with Google
-      </Button>
+      <GoogleSignUp />
     </div>
   );
 };
 
-export default EmailForm;
+export default LoginForm;

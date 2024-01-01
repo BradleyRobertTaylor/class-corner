@@ -1,9 +1,11 @@
 'use client';
 
-import Icons from './ui/Icons';
 import { ReactNode } from 'react';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
+
+import { motion } from 'framer-motion';
+
+import Icons from './ui/Icons';
 import teacherImg from '../../public/teacher-illustration.png';
 import familyImg from '../../public/Family Values - Wandering in Nature.png';
 

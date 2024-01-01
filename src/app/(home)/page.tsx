@@ -1,7 +1,8 @@
+import Image from 'next/image';
+
 import Button from '@/components/Button';
 import SignUp from '@/components/SignUp';
-import src from '../../../public/pexels-max-fischer-5212703.jpg';
-import Image from 'next/image';
+import teacherImg from '../../../public/pexels-max-fischer-5212703.jpg';
 
 export default function HomePage() {
   return (
@@ -23,7 +24,7 @@ export default function HomePage() {
       </section>
       <section className="p-4 md:flex md:items-center md:gap-8 md:p-8 lg:items-start lg:px-16">
         <div className="relative">
-          <Image className="rounded-3xl" src={src} alt="Image" />;
+          <Image className="rounded-3xl" src={teacherImg} alt="Image" />;
         </div>
         <div>
           <h2 className="text-center py-4 text-2xl font-bold border-b-2 border-orange-500 md:pt-0 md:text-4xl">
